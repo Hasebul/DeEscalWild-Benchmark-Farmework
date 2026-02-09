@@ -1,21 +1,20 @@
 base_path = "/content/drive/MyDrive/deescalation_project/Checkpoints/"
 dataset_path = f"{base_path}preprocessed_train_data.jsonl"
-output_dir = f"{base_path}gemma_2"
+output_dir = f"{base_path}granite_3_0_2b"
 
 from unsloth import FastLanguageModel
 import torch
 from datasets import load_dataset
 from trl import SFTTrainer, SFTConfig
-from unsloth.chat_templates import get_chat_template
 
 # --- 1. CONFIGURATION ---
-max_seq_length = 2048 # Gemma 2 supports 8k context
-dtype = None # Auto-detect
-load_in_4bit = True
+max_seq_length = 4096 # Granite 3.0 supports 4k context natively
+dtype = None          # Auto-detect (Float16 or Bfloat16)
+load_in_4bit = True   # Enable 4-bit quantization to save memory
 
 # --- 2. LOAD MODEL ---
-# Using the 4-bit quantized version of Gemma 2 2B Instruct
-model_name = "unsloth/gemma-2-2b-it-bnb-4bit"
+# We use the base instruct model. Unsloth will quantize it to 4-bit automatically.
+model_name = "ibm-granite/granite-3.0-2b-instruct"
 
 print(f"Loading {model_name}...")
 model, tokenizer = FastLanguageModel.from_pretrained(
@@ -38,48 +37,39 @@ model = FastLanguageModel.get_peft_model(
     random_state = 3407,
 )
 
-
-# Setup the Gemma 2 specific chat template
-# Gemma uses <start_of_turn>user<end_of_turn> structure
-tokenizer = get_chat_template(
-    tokenizer,
-    chat_template = "gemma", # <--- Specific for Gemma
-    mapping = {"role": "role", "content": "content", "user": "user", "assistant": "model"}, # Note: 'model' not 'assistant' sometimes, but Unsloth maps it
-)
+# Note: We removed the manual 'get_chat_template' block.
+# Granite 3.0's tokenizer comes pre-configured with the correct
+# IBM-specific chat template.
 
 def formatting_prompts_func(examples):
     convos = examples["messages"]
     texts = []
 
     for i, convo in enumerate(convos):
-        # Ensure convo is a list of dictionaries. If it's a single dict, wrap it.
+        # Ensure convo is a list of dictionaries.
         if isinstance(convo, dict):
             convo = [convo]
         elif not isinstance(convo, list):
-            # Handle cases where convo might be something unexpected (e.g., a string, None)
-            print(f"Warning: Unexpected conversation format at index {i}. Skipping: {convo}")
+            print(f"Warning: Unexpected conversation format at index {i}. Skipping.")
             texts.append("")
             continue
 
         # Ensure all items within the conversation list are dictionaries
         if not all(isinstance(item, dict) for item in convo):
-            print(f"Warning: Conversation at index {i} contains non-dictionary items. Skipping: {convo}")
+            print(f"Warning: Conversation at index {i} contains non-dictionary items. Skipping.")
             texts.append("")
             continue
 
         try:
-            text = tokenizer.apply_chat_template(convo, tokenize = False, add_generation_prompt = False)
+            # apply_chat_template uses Granite's native format automatically
+            text = tokenizer.apply_chat_template(convo, tokenize=False, add_generation_prompt=False)
             texts.append(text)
         except Exception as e:
-            print(f"Error applying chat template for conversation at index {i}: {convo}")
-            print(f"Error details: {e}")
-            texts.append("") # Append empty string to avoid stopping the batch
+            print(f"Error applying chat template at index {i}: {e}")
+            texts.append("")
+
     return { "text" : texts }
 
-
-# --- 4. PREPARE DATA ---
-# Load your existing JSONL file
-# # Load into HF Dataset
 from datasets import Dataset
 dataset = load_dataset("json", data_files=dataset_path, split="train")
 dataset = dataset.map(formatting_prompts_func, batched = True)
@@ -87,6 +77,7 @@ dataset = dataset.train_test_split(test_size=0.03)
 train_dataset = dataset["train"]
 eval_dataset = dataset["test"] # This acts as your validation set
 
+# --- 5. TRAINER CONFIGURATION ---
 trainer = SFTTrainer(
     model = model,
     tokenizer = tokenizer,
@@ -122,9 +113,12 @@ trainer_stats = trainer.train()
 
 # --- 7. SAVE ---
 print("Saving Model...")
-model.save_pretrained("outputs_gemma2_2b/checkpoint-final")
-tokenizer.save_pretrained("outputs_gemma2_2b/checkpoint-final")
+# Saving locally
+model.save_pretrained(f"{output_dir}/checkpoint-final")
+tokenizer.save_pretrained(f"{output_dir}/checkpoint-final")
 
+# Optional: Save to GGUF format (e.g., for Ollama)
+# model.save_pretrained_gguf(f"{output_dir}/gguf", tokenizer, quantization_method = "q4_k_m")
 
 import os
 import pandas as pd
