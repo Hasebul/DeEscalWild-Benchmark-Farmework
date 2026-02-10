@@ -33,7 +33,7 @@ This repository contains the official implementation for the entire data pipelin
 ### System Requirements
 * **OS:** Linux (Ubuntu 20.04+ recommended)
 * **Python:** 3.10+
-* **GPU:** NVIDIA GPU with at least 24GB VRAM (tested on RTX 3090) for training[cite: 467].
+* **GPU:** NVIDIA GPU with at least 24GB VRAM (tested on RTX 3090) for training.
 * **API Keys:** Google Gemini API Key (for diarization pipeline).
 
 ### Installation
