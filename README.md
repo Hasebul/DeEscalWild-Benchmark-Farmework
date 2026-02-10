@@ -73,7 +73,7 @@ DeEscalWild/
 │   └── evaluate.py         # ROUGE/BERTScore testing
 ├── requirements.txt
 └── README.md
-
+```
 
 ## 🚀 Data Pipeline
 
