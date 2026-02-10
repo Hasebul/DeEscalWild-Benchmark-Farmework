@@ -1,0 +1,33 @@
+--- Detailed Conversation Log ---
+
+[00:04] [Police officer]: content you you're uh you're double parked here. Is this your car?
+[00:07] [Suspect]: Oh no.
+[00:09] [Police officer]: You have some on you?
+[00:10] [Suspect]: No.
+[00:11] [Police officer]: Okay. You have some on you?
+[00:13] [Suspect]: No.
+[00:15] [Police officer]: I can shoot you. Stop! Stop right now!
+[00:18] [Police officer]: I can shoot you. Do you understand me?
+[00:21] [Police officer]: You're going to get shot.
+[00:23] [Police officer]: Hey, back, back, back!
+[00:25] [Police officer]: 20, 20, 20's running.
+[00:31] [Police officer]: Shots fired, shots fired.
+[00:34] [Police officer]: You're uh you're double parked.
+[00:35] [Police officer]: Choice 3, we'll be on a 902, Dory Court with one.
+[00:38] [Police officer]: You have some on you?
+[00:39] [Suspect]: No.
+[00:41] [Police officer]: You have some on you?
+[00:41] [Suspect]: No.
+[00:43] [Police officer]: I can shoot you. Stop! Stop right now!
+[00:46] [Police officer]: I can shoot you. Do you understand me?
+[00:49] [Police officer]: You're going to get shot.
+[00:51] [Police officer]: Hey, mag, mag, mag!
+[00:53] [Police officer]: 20, 20, 20's running.
+[00:59] [Police officer]: George 3, shots fired, shots fired!
+[01:02] [Police officer]: I didn't mean to.
+[01:07] [Police officer]: He has a house on house.
+[01:09] [Police officer]: I got a house.
+[01:11] [Police officer]: I don't know where the gun's at.
+[01:12] [Police officer]: It's right there next to his arm.
+[01:14] [Police officer]: Yep, we'll stop.
+[01:15] [Police officer]: I got it.

@@ -1,0 +1,11 @@
+--- Detailed Conversation Log ---
+
+[00:19] [Person shouting 'Get up!']: Get up!
+[00:31] [Person reporting 'Shots fired' and 'one male down']: Shots fired. Shots fired through the ocean. Shots fired.
+[00:46] [Person shouting 'Get up!']: Get up!
+[00:58] [Person reporting 'Shots fired' and 'one male down']: Shots fired. Shots fired through the ocean. Shots fired.
+[01:03] [Person shouting 'Get up!']: Get up!
+[01:15] [Person reporting 'Shots fired' and 'one male down']: Shots fired. Shots fired through the ocean. Shots fired.
+[01:23] [Person shouting 'Get up!']: Get up!
+[01:32] [Person reporting 'Shots fired' and 'one male down']: Shots fired. Shots fired through the ocean. Shots fired.
+[01:36] [Person reporting 'Shots fired' and 'one male down']: I got one mail down.

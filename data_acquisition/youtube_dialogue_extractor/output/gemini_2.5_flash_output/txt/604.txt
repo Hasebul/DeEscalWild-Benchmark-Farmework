@@ -1,0 +1,242 @@
+--- Detailed Conversation Log ---
+
+[00:04] [Dispatcher]: 911, emergency.
+[00:04] [Caller]: Yeah, the city emergency.
+[00:07] [Caller]: Hello?
+[00:08] [Caller]: There is a car passing by shooting.
+[00:12] [Dispatcher]: What address are you at?
+[00:14] [Caller]: I am, I
+[00:19] [Dispatcher]: description of the vehicle?
+[00:21] [Caller]: It's on Modesto, California.
+[00:23] [Dispatcher]: No, do you see the description of the vehicle?
+[00:25] [Caller]: No, um, my granddaughter said that she seen a red car, you said, model girl?
+[00:31] [Caller]: She, she seen the car come by. They were outside and her friend was with her and the car was following her.
+[00:40] [Dispatcher]: So they drove by and shot at your house?
+[00:43] [Caller]: I guess heard a gun, gunshot. That's all I heard.
+[00:50] [Dispatcher]: Do you know the direction he went?
+[00:54] [Caller]: He went towards, which way did they go? Towards Hatch.
+[01:00] [Dispatcher]: How long ago was this?
+[01:02] [Caller]: Like three minutes ago.
+[01:05] [Dispatcher]: What color?
+[01:07] [Caller]: Get in, get in, you guys. He said he come by a black Acura.
+[01:13] [Dispatcher]: Um, okay, was it a black Acura?
+[01:16] [Caller]: What color is the car?
+[01:20] [Caller]: A black Acura.
+[01:24] [Caller]: TLX.
+[01:27] [Dispatcher]: Do you know where they were shooting, like at a house or just shooting in the area?
+[01:31] [Caller]: Which way was the shooting, you guys?
+[01:33] [Caller]: She doesn't know.
+[01:36] [Caller]: They just heard gunshots.
+[01:39] [Dispatcher]: And they saw the vehicle itself?
+[01:41] [Caller]: Yeah.
+[01:51] [Caller]: He called me. He called me.
+[01:53] [Dispatcher]: Do you guys happen to know, um, did you see the license plate on the vehicle?
+[01:57] [Caller]: Hold on, let me ask the girl.
+[02:00] [Caller]: Did you guys see a license plate?
+[02:02] [Granddaughter]: No.
+[02:06] [Granddaughter]: He called me.
+[02:07] [Caller]: You know the guy?
+[02:10] [Granddaughter]: He knows the guy.
+[02:12] [Dispatcher]: Okay, so who is it?
+[02:14] [Caller]: Who is it?
+[02:17] [Granddaughter]: Jaden.
+[02:19] [Dispatcher]: Okay, what's his name?
+[02:21] [Caller]: What's the guy's name?
+[02:25] [Granddaughter]: Jaden.
+[02:26] [Dispatcher]: What is it?
+[02:28] [Granddaughter]: Jaden.
+[02:29] [Dispatcher]: J A D E N?
+[02:32] [Granddaughter]: J A D E N.
+[02:34] [Dispatcher]: Is that how you spell it?
+[02:35] [Granddaughter]: Yeah.
+[02:36] [Dispatcher]: What's his last name?
+[02:39] [Caller]: Do you know his last name?
+[02:41] [Granddaughter]: No.
+[02:43] [Dispatcher]: Do you guys have a phone number for him?
+[02:45] [Granddaughter]: No.
+[02:47] [Caller]: Oh, wait a minute. Do you have a phone number for him?
+[02:56] [Granddaughter]: Get down.
+[02:57] [Caller]: Get down.
+[02:59] [Caller]: He's passing by again.
+[03:07] [Caller]: Tell Moses to come through the back door.
+[03:11] [Dispatcher]: Okay, what direction is he going now?
+[03:13] [Caller]: No, um, my son's going out through the back door. No, my other son.
+[03:17] [Dispatcher]: Okay, he needs to stay inside.
+[03:20] [Dispatcher]: What direction is the vehicle going right now?
+[03:22] [Caller]: He went the opposite way, away from Hatch.
+[03:28] [Dispatcher]: Can you guys get into the house, like can everyone just stay in the house?
+[03:32] [Caller]: Yeah, we're all in the house now.
+[03:35] [Dispatcher]: Okay, does anyone know his last name?
+[03:41] [Caller]: Does anybody know his last name?
+[03:44] [Granddaughter]: Huh? No.
+[03:46] [Dispatcher]: Anyone have a phone number?
+[03:48] [Dispatcher]: Who's boyfriend is it?
+[03:50] [Caller]: Uh, my granddaughter's, um, friend.
+[03:54] [Dispatcher]: She there?
+[03:55] [Caller]: Yeah, hold on. I'll let you talk to her.
+[03:57] [Dispatcher]: Thank you.
+[04:00] [Granddaughter]: Hello?
+[04:00] [Dispatcher]: Okay, what's your boyfriend's last name?
+[04:03] [Granddaughter]: Um, I don't know their last name. I just know their first name.
+[04:06] [Dispatcher]: What's his phone number?
+[04:08] [Granddaughter]: Um, he, he doesn't have a phone number. He calls me from like no caller ID because he like switches numbers back and forth.
+[04:21] [Dispatcher]: Why is he there, do you know?
+[04:24] [Granddaughter]: No, I'm not sure.
+[04:28] [Dispatcher]: Is that him, is someone knocking on the door?
+[04:34] [Dispatcher]: Is someone knocking on the door?
+[04:36] [Granddaughter]: Nobody's knocking on the door. I think he's shooting.
+[04:42] [Dispatcher]: All right, just keep on the line. Can you guys all get down on the ground?
+[04:45] [Granddaughter]: Yeah.
+[05:01] Officer (Voice 4): Hey, stop, stop, stop!
+[05:03] Officer (Voice 4): Fire, fire, fire!
+[05:07] Officer (Voice 5): Press to be throwing shots, fire, shots, fire.
+[05:10] Officer (Voice 6): Holy shit, 733.
+[05:21] Officer (Voice 4): Hey, stop, stop, stop!
+[05:22] Officer (Voice 4): Fire, fire, fire!
+[05:25] Officer (Voice 5): Press to be throwing shots, fire, shots, fire.
+[05:29] Officer (Voice 6): Holy shit, 733.
+[05:34] Officer (Voice 5): Press to be throwing the vehicle, took off southbound, Boulder, there's about to make a eastbound on Hatch.
+[05:44] Officer (Voice 4): Fuck.
+[05:49] Officer (Voice 5): We shot, we shot.
+[05:55] Officer (Voice 4): Hey, from.
+[06:08] Officer (Voice 7): Center medium.
+[06:09] Officer (Voice 8): Can air guide us in, how far?
+[06:11] Officer (Voice 7): There he is. Yep, I see him.
+[06:19] Officer (Voice 7): Modesto Police Department, hands up!
+[06:21] Officer (Voice 9): You guys ready? Everybody ready?
+[06:22] Officer (Voice 7): Yep, ready.
+[06:24] Officer (Voice 9): Okay, stop resisting.
+[06:26] Officer (Voice 7): Yeah.
+[06:30] Officer (Voice 7): Yeah, let me see your hands up, both hands up.
+[06:34] Officer (Voice 7): Let me see your right hand.
+[06:36] Officer (Voice 7): Let me see your other hand.
+[06:38] Officer (Voice 7): Other hand, your left hand.
+[06:40] Officer (Voice 7): Okay, jump, get over the center divide.
+[06:44] Officer (Voice 7): Hop over to the other side.
+[06:48] Officer (Voice 7): Yeah, you want me, you want me to yell at him, Mesa?
+[06:50] Officer (Voice 7): Hey, what I need you to do is get on to this side of the road. Keep your hands up in the air. Do it now!
+[07:00] Officer (Voice 9): Yeah, come on.
+[07:06] Officer (Voice 7): Okay, you ready? You want to go hands on?
+[07:08] Officer (Voice 9): Yes.
+[07:10] Officer (Voice 7): You want me to go to Mesa?
+[07:12] Officer (Voice 9): Uh, yeah, come on.
+[07:14] Officer (Voice 7): Keep your hands up.
+[07:15] Officer (Voice 9): Hold on, hold on, hold on.
+[07:16] Officer (Voice 7): Hold on, G.
+[07:17] Officer (Voice 7): Come towards us. Hop over, hop over.
+[07:20] Officer (Voice 7): Hop over that railing!
+[07:22] Officer (Voice 9): I'm with you. Come on.
+[07:25] Officer (Voice 7): All right, everybody get and drag him on this side.
+[07:28] Officer (Voice 9): Grab that.
+[07:30] Officer (Voice 7): Yeah, yeah, yeah, yeah.
+[07:33] Officer (Voice 7): Keep your hands up. Do not move.
+[07:36] Officer (Voice 9): Turn around.
+[07:37] Officer (Voice 7): Turn around.
+[07:38] Officer (Voice 9): Just grab him and bring him over. Grab him and bring him over.
+[07:41] Jaden Sieng: Ah!
+[07:42] Jaden Sieng: Ah!
+[07:43] Jaden Sieng: Ah!
+[07:44] Jaden Sieng: Ah!
+[07:45] Officer (Voice 7): Get on the ground. Put your hands behind your back. Hands behind your back.
+[07:48] Jaden Sieng: I can't feel my left arm. Ah!
+[07:53] Officer (Voice 9): There you go.
+[07:58] Officer (Voice 9): Only one, right?
+[07:59] Jaden Sieng: Ah!
+[08:03] Officer (Voice 7): All right, medkit, medkit.
+[08:05] Officer (Voice 9): Yeah, he's bleeding from his arm.
+[08:06] Officer (Voice 7): I'll grab it.
+[08:15] Officer (Voice 9): Go ahead.
+[08:20] Officer (Voice 9): Yeah, go ahead.
+[08:22] Officer (Voice 7): Hey, grab a first aid kit.
+[08:25] Officer (Voice 7): Hey, hey, Freddy, grab a first aid kit.
+[08:29] Jaden Sieng: Ah!
+[08:31] Officer (Voice 7): What?
+[08:32] Officer (Voice 9): Yeah, go ahead.
+[08:34] Jaden Sieng: Ah!
+[08:38] Officer (Voice 7): What's your name, bud?
+[08:39] Jaden Sieng: Jaden.
+[08:40] Officer (Voice 7): Excuse me?
+[08:41] Officer (Voice 9): You want to do a search?
+[08:42] Officer (Voice 7): No. Hey, do a quick search on him and then I'm going to start stripping him.
+[08:45] Jaden Sieng: Ah!
+[08:47] Officer (Voice 7): Jaden, what's your last name?
+[08:48] Jaden Sieng: S I E N G.
+[08:49] Officer (Voice 7): S I E N G. Where are you hurt at?
+[08:52] Jaden Sieng: My left arm, my left arm.
+[08:54] Jaden Sieng: I can't feel my left arm. That's why I said lift my arm up.
+[08:56] Officer (Voice 9): Okay, make sure he's gloved up. Make sure he's gloved up.
+[08:59] Jaden Sieng: Ah!
+[09:01] Officer (Voice 9): Okay, go ahead.
+[09:04] Jaden Sieng: My left calf.
+[09:08] Jaden Sieng: Ah!
+[09:16] Officer (Voice 9): You want to stand by till we cut it?
+[09:18] Officer (Voice 7): See if we're looking for.
+[09:21] Jaden Sieng: Ah!
+[09:23] Officer (Voice 7): You got showing your left arm, yeah?
+[09:29] Officer (Voice 7): Can you glove up on me, bro?
+[09:32] Officer (Voice 9): Yeah, we got some on the back of my head.
+[09:34] Officer (Voice 7): Yeah, go ahead.
+[09:36] Officer (Voice 9): If he gets up, he gets up.
+[09:38] Officer (Voice 7): What are you finding, gloves?
+[09:39] Officer (Voice 9): These are mine for my medkit. Check my other medkit. My those are both my medkits. Check them. There might be more gloves in there.
+[09:51] Jaden Sieng: Ah!
+[09:52] Jaden Sieng: Ah!
+[09:54] Officer (Voice 7): Don't move, don't move.
+[09:55] Officer (Voice 9): Don't move.
+[09:57] Jaden Sieng: Ah!
+[10:05] Jaden Sieng: Ah!
+[10:07] Officer (Voice 7): It's going to hurt, dude.
+[10:08] Jaden Sieng: Ah!
+[10:09] Officer (Voice 9): Don't move. Put your knee up right here, bro.
+[10:15] Jaden Sieng: Ah!
+[10:17] Officer (Voice 7): I know, man, it's going to help you, brother.
+[10:20] Jaden Sieng: Ah!
+[10:23] Jaden Sieng: Ah!
+[10:26] Officer (Voice 7): Hey, try to stand still. I got scissors very close to your neck and I don't want to accidentally cut you, right? Stand still.
+[10:34] Jaden Sieng: Ah!
+[10:41] Officer (Voice 9): Hey, before ammo takes them, let's go a thorough search.
+[10:43] Officer (Voice 7): Yeah.
+[10:44] Officer (Voice 9): I don't have gloves.
+[10:45] Jaden Sieng: Ah!
+[10:45] Officer (Voice 7): Let's get gloves.
+[10:46] Officer (Voice 9): They got gloves.
+[10:48] Officer (Voice 9): Hey, can you log turn to get applied, boss?
+[10:50] Officer (Voice 7): Yeah, that's right.
+[10:54] Officer (Voice 7): Did you have, uh, you said photos?
+[10:55] Officer (Voice 9): What's that?
+[10:56] Officer (Voice 9): Hey, boss, can you, uh, log turn to get applied right now?
+[10:59] Jaden Sieng: S I E N G.
+[11:03] Officer (Voice 7): Jaden Sieng.
+[11:04] Officer (Voice 9): S I E N G, Jaden Sieng.
+[11:08] Officer (Voice 9): Hey, uh, what's your date of birth, boss?
+[11:17] Jaden Sieng: Ah!
+[11:18] Officer (Voice 9): How do you spell your first name?
+[11:20] Jaden Sieng: J A D E N.
+[11:24] Officer (Voice 9): And S I E N G.
+[11:29] Officer (Voice 9): What's your name, buddy?
+[11:31] Jaden Sieng: Jaden.
+[11:32] Officer (Voice 9): All right, what's hurting right now?
+[11:34] Jaden Sieng: My left arm and my, my back calf. I can't feel my left arm.
+[11:38] Officer (Voice 9): Anything on your head or your neck?
+[11:39] Jaden Sieng: My left.
+[11:40] Officer (Voice 9): Anything on your back?
+[11:41] Jaden Sieng: No.
+[11:43] Officer (Voice 9): How about your legs?
+[11:44] Jaden Sieng: My calf.
+[11:46] Officer (Voice 9): Which one, left or right?
+[11:47] Jaden Sieng: Right, you just touched it.
+[11:49] Jaden Sieng: Calf.
+[11:50] Officer (Voice 9): Yeah, it was just scripted.
+[11:53] Jaden Sieng: My calf.
+[11:54] Officer (Voice 9): I couldn't see, bro. It was pretty covered up by the sweater, but it wasn't.
+[11:58] Officer (Voice 7): Okay.
+[12:00] Officer (Voice 9): You're going to apply.
+[12:03] Officer (Voice 9): What did it say? You want to do a two minute search there, 2:30 minutes.
+[12:07] Officer (Voice 9): I ain't got a marker for you, boss.
+[12:12] Officer (Voice 9): Excuse me, were you in that car accident? Crashed your car? Did you lose consciousness at all when you crashed?
+[12:17] Jaden Sieng: No.
+[12:18] Officer (Voice 9): You have any medical conditions?
+[12:19] Officer (Voice 7): Take any medications?
+[12:21] Officer (Voice 9): Yeah, go ahead.
+[12:22] Officer (Voice 7): Any drugs or alcohol today?
+[12:24] Jaden Sieng: Alcohol.

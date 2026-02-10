@@ -1,0 +1,66 @@
+--- Detailed Conversation Log ---
+
+[00:05] [Automated system voice]: Your incident has been updated.
+[00:09] [Automated system voice]: Your incident has been updated.
+[00:11] Officer (Voice 2): I got eyes on him.
+[00:22] Officer (Voice 2): We're going to be at William Cannon and Canley.
+[00:29] [Automated system voice]: Your incident has been updated.
+[00:36] [Automated system voice]: Your incident has been updated.
+[00:41] [Automated system voice]: Your incident has been updated.
+[00:45] Officer (Voice 2): Get.
+[00:46] Officer (Voice 3): Get.
+[00:47] Officer (Voice 2): Get.
+[00:48] Officer (Voice 2): Frank 210, directional fire is going to be westbound. He's in the middle lane.
+[00:53] Officer (Voice 2): Stop, sir!
+[00:55] Officer (Voice 2): Stop!
+[00:59] Officer (Voice 2): Stop where you're going!
+[01:10] Officer (Voice 2): Stop!
+[01:16] Officer (Voice 2): Frank 210, he is going eastbound on the north curb line.
+[01:21] Officer (Voice 2): Direction of fire, still going to be westbound. I got a lot of traffic.
+[01:35] Officer (Voice 2): There is what appears to be a black pistol in the middle of his lap. He tried covering up when he saw me.
+[01:58] Officer (Voice 2): I need a unit to get westbound and block traffic.
+[02:16] Officer (Voice 2): Stop!
+[02:18] Officer (Voice 2): Put your hands up!
+[02:20] Officer (Voice 2): Put your hands up!
+[02:24] Officer (Voice 2): Put your hands up!
+[02:37] [Dispatcher]: Frank 210, Frank 210.
+[02:40] Officer (Voice 2): Put your hands up!
+[02:41] Officer (Voice 5): Put your hands!
+[02:43] Officer (Voice 2): Drop the gun!
+[02:47] Officer (Voice 2): Drop the gun!
+[02:49] Officer (Voice 2): Drop the gun!
+[02:57] Officer (Voice 2): Let me see your hands! Drop the gun!
+[02:59] Officer (Voice 5): Hands up!
+[03:01] Officer (Voice 2): Put your hands up!
+[03:06] Officer (Voice 2): Frank 210, shots taken, suspect's down.
+[03:10] Officer (Voice 2): Going to need the road blocked off westbound.
+[03:13] Officer (Voice 5): Put your hands up!
+[03:14] Officer (Voice 2): Put your hands up!
+[03:15] Officer (Voice 2): Coming to you.
+[03:17] Officer (Voice 2): Coming to you.
+[03:33] Officer (Voice 5): Good.
+[03:34] Officer (Voice 2): Yes, sir.
+[03:36] Officer (Voice 2): He still has the gun under him.
+[03:46] [Dispatcher]: Frank 210, Frank 210.
+[03:51] Officer (Voice 2): I need a unit to get westbound and block traffic.
+[04:01] [Dispatcher]: Frank 210, Frank 210.
+[04:03] [Unidentified speaker]: Westbound traffic.
+[04:09] [Dispatcher]: Frank 210, Frank 210.
+[04:11] Officer (Voice 2): Stop!
+[04:13] Officer (Voice 2): Put your hands up!
+[04:15] Officer (Voice 2): Put your hands up!
+[04:19] Officer (Voice 2): Put your hands up!
+[04:22] [Dispatcher]: No message.
+[04:28] [Dispatcher]: Going to A.
+[04:31] [Dispatcher]: Frank 210, Frank 210.
+[04:35] Officer (Voice 2): Put your hands up!
+[04:36] Officer (Voice 5): Put your hands!
+[04:37] Officer (Voice 2): Drop the gun!
+[04:42] Officer (Voice 2): Drop the gun!
+[04:43] Officer (Voice 2): Drop the gun!
+[04:51] Officer (Voice 2): Let me see your hands! Drop the gun!
+[04:53] Officer (Voice 5): Hands up!
+[04:56] Officer (Voice 2): Put your hands up!
+[05:00] Officer (Voice 2): Frank 210, shots taken, suspect's down.
+[05:05] Officer (Voice 2): Going to need the road blocked off westbound.
+[05:08] Officer (Voice 5): Put your hands up!
