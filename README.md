@@ -159,10 +159,10 @@ Our fine-tuned Qwen 2.5 (3B) outperforms the general-purpose Gemini 2.5 Flash (p
 
 ## ⚖️ Ethical Use & Disclaimer
 
-* **Warning:** This dataset contains real-world conflicts which may include aggressive language, slurs, and emotional volatility. [cite: 803]
-* **Intended Use:** Strictly for educational simulation and training human officers in de-escalation strategies. [cite: 810]
-* **Prohibited Use:** This dataset must **NOT** be used for predictive policing, automated profiling, or autonomous decision-making systems. [cite: 810]
-* **Privacy:** The pipeline is designed for local processing to preserve privacy. [cite: 808]
+* **Warning:** This dataset contains real-world conflicts which may include aggressive language, slurs, and emotional volatility.
+* **Intended Use:** Strictly for educational simulation and training human officers in de-escalation strategies.
+* **Prohibited Use:** This dataset must **NOT** be used for predictive policing, automated profiling, or autonomous decision-making systems.
+* **Privacy:** The pipeline is designed for local processing to preserve privacy.
 
 
 
