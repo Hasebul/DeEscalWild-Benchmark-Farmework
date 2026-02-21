@@ -1,86 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="icon" href="images/logo.png" type="image/png" />
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css"> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>DeEscalWild</title>
 
     <meta property="og:title" content="DeEscalWild" />
-    <meta
-      property="og:description"
-      content="DeEscalWild: A Real-World Benchmark for Automated De-Escalation Training
-with SLMs"
-    />
-    <meta
-      property="og:image"
-      content="Dees"
-    />
+    <meta property="og:description" content="DeEscalWild: A Real-World Benchmark for Automated De-Escalation Training with SLMs" />
+    <meta property="og:image" content="https://DeEscalWild.github.io/images/DeEscalWild.png" />
     <meta property="og:url" content="https://DeEscalWild.github.io" />
     <meta property="og:type" content="website" />
     <meta property="og:image:width" content="3840" />
     <meta property="og:image:height" content="2160" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Deescalation_wild.pdf" />
-    <meta
-      name="twitter:description"
-      content="DeEscalWild: A Real-World Benchmark for Automated De-Escalation Training
-with SLMs"
-    />
+    <meta name="twitter:title" content="DeEscalWild Benchmark" />
+    <meta name="twitter:description" content="DeEscalWild: A Real-World Benchmark for Automated De-Escalation Training with SLMs" />
     <meta name="twitter:image:width" content="3840" />
     <meta name="twitter:image:height" content="2160" />
-    <meta
-      name="twitter:image"
-      content="https://DeEscalWild.github.io/images/DeEscalWild.png"
-    />
-    <meta
-      name="google-site-verification"
-      content="9pM5JfTm1_c-Tmup10c-YeYhrLtBVv_tnZJ_mbvxGWQ"
-    />
-    <meta
-      name="keywords"
-      content="DeEscalWild, Geo-Spatial Reasoning, Foundation Models, AI, Map-Based Evaluation, Geo-Spatial AI, AI Benchmark, Map Tools, Geo-Spatial Data"
-    />
+    <meta name="twitter:image" content="https://DeEscalWild.github.io/images/DeEscalWild.png" />
+    
+    <meta name="google-site-verification" content="9pM5JfTm1_c-Tmup10c-YeYhrLtBVv_tnZJ_mbvxGWQ" />
+    <meta name="keywords" content="DeEscalWild, Geo-Spatial Reasoning, Foundation Models, AI, Map-Based Evaluation, Geo-Spatial AI, AI Benchmark, Map Tools, Geo-Spatial Data" />
+    
     <style>
       body {
-        font-family: "Poppins";
+        font-family: "Poppins", sans-serif;
         font-size: 18px;
         margin: 0;
         padding: 0;
         text-align: justify;
       }
-      /* body {
-            font-family: 'Roboto', sans-serif;
-            font-size: 18px;
-            margin: 0;
-            padding: 0;
-            text-align: justify;
-        } */
 
       .container {
         max-width: 59rem;
@@ -97,49 +57,16 @@ with SLMs"
       }
 
       .external-link {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
-
+        padding: 0.2rem 1rem;
         text-align: center;
         text-decoration: none;
         color: white;
-        border-radius: 0.1rem;
         transition: background-color 0.3s;
         border-radius: 0.3rem;
-
         display: flex;
         flex-direction: row;
-        gap: 0.2rem;
-      }
-
-      .icon {
-        margin-top: 0.2rem;
-      }
-
-      .gray-border {
-        border: 0.1rem solid gray;
-        border-collapse: collapse;
-      }
-
-      .black-border {
-        border: 0.5rem solid black;
-        border-collapse: collapse;
-      }
-
-      .bg-gray {
-        background-color: gainsboro;
-      }
-
-      .center-align {
-        vertical-align: middle;
-        text-align: center;
-      }
-
-      .dark-font {
-        color: black;
-        font-weight: bolder;
+        align-items: center;
+        gap: 0.4rem;
       }
 
       .responsive-flex {
@@ -153,6 +80,15 @@ with SLMs"
 
       .half-width {
         width: 50%;
+      }
+
+      /* Paper Overview Image Styling */
+      .overview-image {
+        width: 100%;
+        margin-top: 2rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
       }
 
       @media (max-width: 768px) {
@@ -173,629 +109,315 @@ with SLMs"
 
   <body>
     <div class="container">
-        <div style="text-align: center; margin-top: 3rem;  display: flex; align-items: center; justify-content: center;">
-            <img src="images/logo.png" alt="Overview" style="width: 4rem; margin-bottom: 0.8rem; margin-right: 1rem;">
-            <h1>DeEscalWild</h1>
-        </div>
-        <h2 style="text-align: center; margin-top: -1.5rem; font-weight: 500; font-size:x-large;">A Real-World Benchmark for Automated De-Escalation Training
-with SLMs</h2>
+      
+      <div style="text-align: center; margin-top: 3rem; display: flex; align-items: center; justify-content: center;">
+          <!-- <img src="images/logo.png" alt="DeEscalWild Logo" style="width: 4rem; margin-bottom: 0.8rem; margin-right: 1rem;"> -->
+          <h1>DeEscalWild</h1>
+      </div>
+      
+      <h2 style="text-align: center; margin-top: -1.5rem; font-weight: 500; font-size:x-large;">
+        A Real-World Benchmark for Automated De-Escalation Training with SLMs
+      </h2>
 
-<!-- 
-        <h2 style="text-align: center; margin-top: -.5rem; font-weight:900; font-size:x-large; color: orange; background-color: black;">
-            🏆 ICML'25 Spotlight Paper 🏆
-        </h2> -->
+      <h4 style="text-align: center; margin-top: -0.5rem; font-weight: 500">
+          <a href="https://hasebul.github.io/shawon_portfolio/" style="text-decoration: none; color: inherit;">Md Hasebul Hasan</a><sup style="color: blue">1</sup>,
+          <a href="https://scholar.google.com/citations?user=g0IYOooAAAAJ&hl=en" style="text-decoration: none; color: inherit;">Krity Haque Charu</a><sup style="color: blue">1</sup>,
+          <a href="https://eshwaraprasadsridhar.github.io/" style="text-decoration: none; color: inherit;">Eshwara Prasad Sridhar</a><sup style="color: green">2</sup>,
+          <a href="https://www.uta.edu/academics/faculty/profile?user=shuchi.deb" style="text-decoration: none; color: inherit;">Dr. Shuchisnigdha Deb</a><sup style="color: green">2</sup>,
+          <a href="https://crystal.uta.edu/~mislam/" style="text-decoration: none; color: inherit;">Dr. Mohammad A. Islam</a><sup style="color: blue">1</sup>
+      </h4>
 
-        <h4 style="text-align: center; margin-top: -0.5rem; font-weight: 500">
-            <a href="https://hasebul.github.io/shawon_portfolio/">Md Hasebul Hasan</a>
-            <sup style="color: blue">1</sup>,
-            <a href="https://scholar.google.com/citations?user=g0IYOooAAAAJ&hl=en">Krity Haque Charu</a>
-            <sup style="color: blue">1</sup> ,
-            <a href="https://eshwaraprasadsridhar.github.io/">Eshwara Prasad Sridhar</a>
-            <sup style="color: green">2</sup>,
-            <a href="https://www.uta.edu/academics/faculty/profile?user=shuchi.deb">Dr. Shuchisnigdha Deb</a>
-            <sup style="color: green">2</sup>,
-            <a href="https://crystal.uta.edu/~mislam/">Dr. Mohammad A. Islam</a>
-            <sup style="color: blue">1</sup>
-        </h4>
+      <p style="text-align: center; margin-top: -1rem; font-weight: 500; font-size: medium;">
+          <sup style="color: blue">1</sup> Department of Computer Science and Engineering<br>
+          The University of Texas at Arlington
+      </p>
+      <p style="text-align: center; margin-top: -1.2rem; font-weight: 500; font-size: medium;">
+          <sup style="color: green">2</sup> Department of Industrial, Manufacturing, and Systems Engineering<br>
+          The University of Texas at Arlington
+      </p>
 
-        <p style="text-align: center; margin-top: -1rem; font-weight: 500; font-size: medium;">
-            <sup style="color: blue">1</sup>
-            Department of Computer Science and Engineering<br>
-            The University of Texas at Arlington
-        </p>
-        <p  style="text-align: center; margin-top: -1.2rem; font-weight: 500; font-size: medium;">
-            <sup style="color: green">2</sup>
-            Department of Industrial, Manufacturing, and Systems Engineering<br>
-            The University of Texas at Arlington
-        </p>
-
-      <span
-        style="
-          font-weight: 500;
-          display: flex;
-          align-items: center;
-          text-align: center;
-          justify-content: center;
-          font-size: medium;
-          margin-top: -1.2rem;
-        "
-      >
-        <h1
-          style="
-            font-family: 'Roboto', sans-serif;
-            font-weight: 150;
-            font-size: 1.2rem;
-            margin-right: 4px;
-          "
-        >
-          †
-        </h1>
-        Corresponding to&nbsp;<a href="mailto:mdhasebul.hasan@uta.edu"
-          >mdhasebul.hasan@uta.edu</a
-        >
-      </span>
-
-      <span
-        style="
-          font-weight: 500;
-          display: flex;
-          align-items: center;
-          text-align: center;
-          justify-content: center;
-          font-size: medium;
-          margin-top: -1.2rem;
-        "
-      >
+      <span style="font-weight: 500; display: flex; align-items: center; justify-content: center; font-size: medium; margin-top: -1.2rem;">
+        <h1 style="font-family: 'Roboto', sans-serif; font-weight: 150; font-size: 1.2rem; margin-right: 4px; margin-bottom: 0;">†</h1>
+        Corresponding to&nbsp;<a href="mailto:mdhasebul.hasan@uta.edu">mdhasebul.hasan@uta.edu</a>
       </span>
 
       <div style="margin-top: 1rem"></div>
+      <span class="link-block" style="margin-top: -0.5rem"></span>
 
-      <span class="link-block" style="margin-top: -0.5rem">
-        <!-- <a href="https://arxiv.org/abs/2501.00316" class="external-link" style="background-color:#363636; display: flex; align-items: center; padding-top: 8px; padding-bottom: 8px;">
-                <i class="ai ai-arxiv"></i>
-                <span>arXiv</span>
-            </a> -->
-
-        <!-- <a
-          href="https://www.researchgate.net/publication/387670063_DeEscalWild_A_Map-Based_Evaluation_of_Geo-Spatial_Reasoning_in_Foundation_Models"
-          class="external-link"
-          style="
-            background-color: #363636;
-            display: flex;
-            align-items: center;
-            padding-top: 8px;
-            padding-bottom: 8px;
-          "
-        >
-          <i class="fas fa-file-alt" style="margin-right: 4px"></i>
-          <span>Paper</span>
-        </a> -->
-        <!-- <a href="https://huggingface.co/papers/2501.00316" class="external-link"
-                style="background-color:#363636; display: flex; align-items: center; padding-top: 8px; padding-bottom: 8px;">
-                <i class="fas fa-file-alt"></i>
-                <span>Paper</span>
-            </a> -->
-
-        <!-- <a
-          href="https://github.com/DeEscalWild"
-          class="external-link"
-          style="
-            background-color: #363636;
-            display: flex;
-            align-items: center;
-            padding-top: 8px;
-            padding-bottom: 8px;
-          "
-        >
-          <i class="fab fa-github" style="margin-right: 4px"></i>
-          <span>Code</span>
-        </a> -->
-        <!-- <a
-          href="https://huggingface.co/DeEscalWild"
-          class="external-link"
-          style="
-            background-color: #363636;
-            display: flex;
-            align-items: center;
-            padding-top: 8px;
-            padding-bottom: 8px;
-          "
-        >
-          <! <span class="material-symbols-outlined icon">folder</span> -->
-          <!-- <p style="font-size:18px; margin: 0; margin-right: 4px;">🤗</p> -->
-          <!-- <i class="fa-solid fa-images" style="margin-right: 4px"></i>
-          <span>Dataset</span>
-        </a>
-        <a
-          href="#results"
-          class="external-link"
-          style="
-            background-color: #363636;
-            display: flex;
-            align-items: center;
-            padding-top: 8px;
-            padding-bottom: 8px;
-          "
-        > --> 
-          <!-- <p style="font-size:18px; margin: 0; margin-right: 4px;">🏆</p> -->
-          <!-- <i class="fa-solid fa-trophy" style="margin-right: 4px"></i>
-          <span>Leaderboard</span>
-        </a>
-        <a
-          href="https://mapqator.github.io/project"
-          class="external-link"
-          style="
-            background-color: #363636;
-            display: flex;
-            align-items: center;
-            padding-top: 8px;
-            padding-bottom: 8px;
-          "
-        >
-          <i class="fa-solid fa-location-dot" style="margin-right: 4px"></i>
-          <span>MapQaTor</span>
-        </a>
-      </span> -->
-
-      <!-- <div
-        style="
-          margin-top: 2rem;
-          padding: 1.25rem;
-          border-radius: 0px;
-          background: #1f1f1f;
-          border: 1px solid #3a3a3a;
-          color: #e8e8e8;
-        "
-      >
-        <h2 style="margin: 0 0 0.75rem 0; text-align: center">
-          MapQA Ecosystem
-        </h2>
-
-        <p style="text-align: center; margin-top: 0; margin-bottom: 1.25rem;">
-          A unified ecosystem for map-based question answering and geo-spatial reasoning.
-        </p>
-
-        <div
-          style="
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            justify-content: center;
-          "
-        > -->
-          <!-- MapQaTor -->
-          <!-- <a
-            href="https://arxiv.org/abs/2412.21015"
-            class="external-link"
-            style="
-              background-color: #363636;
-              display: flex;
-              align-items: center;
-              padding: 10px 14px;
-              border-radius: 8px;
-            "
-          >
-            <i class="fa-solid fa-location-dot" style="margin-right: 6px"></i>
-            <span><strong>MapQaTor</strong> — ACL 2025</span>
-          </a> -->
-          
-          <!-- DeEscalWild -->
-          <!-- <a
-            href="https://arxiv.org/abs/2501.00316"
-            class="external-link"
-            style="
-              background-color: #363636;
-              display: flex;
-              align-items: center;
-              padding: 10px 14px;
-              border-radius: 8px;
-            "
-          >
-            <i class="fa-solid fa-map" style="margin-right: 6px"></i>
-            <span><strong>DeEscalWild</strong> — ICML 2025</span>
-          </a> -->
-
-          
-
-          <!-- MapAgent -->
-          <!-- <a
-            href="https://arxiv.org/abs/2509.05933"
-            class="external-link"
-            style="
-              background-color: #363636;
-              display: flex;
-              align-items: center;
-              padding: 10px 14px;
-              border-radius: 8px;
-            "
-          >
-            <i class="fa-solid fa-robot" style="margin-right: 6px"></i>
-            <span><strong>MapAgent</strong> — EACL 2026</span>
-          </a>
-        </div>
-      </div> -->
-
-
-      <!-- <embed src="files/overview.pdf" type="application/pdf" width="100%" height="600px" /> -->
-      <img
-        src="./Deescalation_wild.png"
-        alt="Overview"
-        style="width: 100%; margin-top: 1rem; margin-top: 2rem"
-      />
-      <p>
+      <img src="Deescal_wild.jpg" alt="Overview of DeEscalWild Paper" class="overview-image" />
+      
+      <p style="text-align: center; color: #555; font-size: 0.9em; margin-top: 0.5rem;">
         Overview of DeEscalWild. 
       </p>
 
-      <h2 style="text-align: center">Introduction</h2>
+      <h2 style="text-align: center; margin-top: 2rem;">Introduction</h2>
       <p>
         Effective de-escalation is a cornerstone of modern policing, directly impacting officer safety and public trust. Traditional training methods—such as static role-playing or branching video scenarios—often fail to capture the unpredictability of real-world conflict.
-
-The Challenge: The "Compute vs. Reality" Deadlock Recent advances in Generative AI offer a solution: dynamic, open-ended conversations with AI agents. However, deploying these systems creates a technical deadlock:
-
-Large Language Models (LLMs) offer great reasoning but require massive computing power, making them too slow or heavy for standalone VR headsets.
-
-Small Language Models (SLMs) are efficient and portable but typically lack the nuanced reasoning required for high-stakes de-escalation.
-
-Our Solution: Data-Driven Efficacy at the Edge The missing link is high-quality training data. Existing datasets often treat police dialogue as archival evidence rather than a tool for active training. DeEscalWild changes this paradigm.
-
-We constructed a pipeline specifically for "SLM Efficacy at the Edge." By mining and rigorously filtering 5,000 raw videos into a curated corpus of 285,887 dialogue turns, we created a standardized benchmark for conflict resolution. Our experiments prove that a specialized SLM, fine-tuned on real-world data, can outperform general-purpose giants (like Gemini 2.5 Flash) while remaining efficient enough for real-time, on-device deployment.
-
-Key Contributions
-The DeEscalWild Benchmark: A curated dataset of 1,500 scenarios (approx. 4.7M tokens) filtered via a "Human-in-the-loop" and "LLM-as-a-Judge" process.
-
-Real-World Fidelity: Unlike synthetic datasets, our corpus captures the raw, unstructured, and emotional nature of real-world police-civilian interactions.
-
-Edge-Ready Performance: We demonstrate that fine-tuned SLMs (e.g., Qwen 2.5 3B) achieve superior performance on ROUGE-L and BERTScore metrics compared to larger models, validating the use of portable hardware for immersive training.
+      </p>
+      <p>
+        <strong>The Challenge: The "Compute vs. Reality" Deadlock</strong><br>
+        Recent advances in Generative AI offer a solution: dynamic, open-ended conversations with AI agents. However, deploying these systems creates a technical deadlock:
+        <br><br>
+        Large Language Models (LLMs) offer great reasoning but require massive computing power, making them too slow or heavy for standalone VR headsets.
+        <br><br>
+        Small Language Models (SLMs) are efficient and portable but typically lack the nuanced reasoning required for high-stakes de-escalation.
+      </p>
+      <p>
+        <strong>Our Solution: Data-Driven Efficacy at the Edge</strong><br>
+        The missing link is high-quality training data. Existing datasets often treat police dialogue as archival evidence rather than a tool for active training. DeEscalWild changes this paradigm.
+      </p>
+      <p>
+        We constructed a pipeline specifically for "SLM Efficacy at the Edge." By mining and rigorously filtering 5,000 raw videos into a curated corpus of 285,887 dialogue turns, we created a standardized benchmark for conflict resolution. Our experiments prove that a specialized SLM, fine-tuned on real-world data, can outperform general-purpose giants (like Gemini 2.5 Flash) while remaining efficient enough for real-time, on-device deployment.
+      </p>
+      <p>
+        <strong>Key Contributions</strong><br>
+        <strong>The DeEscalWild Benchmark:</strong> A curated dataset of 1,500 scenarios (approx. 4.7M tokens) filtered via a "Human-in-the-loop" and "LLM-as-a-Judge" process.<br>
+        <strong>Real-World Fidelity:</strong> Unlike synthetic datasets, our corpus captures the raw, unstructured, and emotional nature of real-world police-civilian interactions.<br>
+        <strong>Edge-Ready Performance:</strong> We demonstrate that fine-tuned SLMs (e.g., Qwen 2.5 3B) achieve superior performance on ROUGE-L and BERTScore metrics compared to larger models, validating the use of portable hardware for immersive training.
       </p>
 
-      <h2 style="text-align: center">DeEscalWild Overview</h2>
-      DeEscalWild is a real-world benchmark and dataset designed to modernize police de-escalation training. While Virtual Reality (VR) and AI offer immersive training possibilities, current systems struggle with a critical trade-off: they are either too computationally heavy for portable headsets or lack the domain-specific data needed for realistic interactions.
+      <h2 style="text-align: center; margin-top: 2rem;">DeEscalWild Overview</h2>
+      <p>
+        DeEscalWild is a real-world benchmark and dataset designed to modernize police de-escalation training. While Virtual Reality (VR) and AI offer immersive training possibilities, current systems struggle with a critical trade-off: they are either too computationally heavy for portable headsets or lack the domain-specific data needed for realistic interactions.
+      </p>
+      <p>
+        We bridge this gap by introducing DeEscalWild—the first large-scale dataset derived from "in-the-wild" police-civilian interactions found on open-source platforms like YouTube and TikTok. By curating over 1,500 high-quality scenarios and fine-tuning Small Language Models (SLMs) like Qwen 2.5 (3B), we demonstrate that compact, portable AI can outperform massive, general-purpose models in specialized de-escalation tasks, enabling realistic training on lightweight hardware.
+      </p>
 
-We bridge this gap by introducing DeEscalWild—the first large-scale dataset derived from "in-the-wild" police-civilian interactions found on open-source platforms like YouTube and TikTok. By curating over 1,500 high-quality scenarios and fine-tuning Small Language Models (SLMs) like Qwen 2.5 (3B), we demonstrate that compact, portable AI can outperform massive, general-purpose models in specialized de-escalation tasks, enabling realistic training on lightweight hardware.
+    <h2 style="text-align: center; margin-top: 2rem" id="dataset">Data Statistics</h2>
+    <p style="text-align: center; color: #555; margin-bottom: 2rem;">Summary statistics of the DeEscalWild dataset</p>
 
-      <h2 style="text-align: center; margin-top: 2rem" id="dataset">
-        Data Statistics
-      </h2>
-      <div class="responsive-flex">
-        <!-- <img src="images/key_stats.png" alt="Overview" class="half-width" > -->
-        <!-- <table class="half-width" style="font-size: small;">
-            <thead>
-                <td colspan="2">
-                    <hr>
-                </td>
-                <tr>
-                    <th>Statistics</th>
-                    <th>Number</th>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <hr>
-                    </td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Total unique question instances</td>
-                    <td>700</td>
-                </tr>
-                <tr>
-                    <td>- Questions with api or textual-context</td>
-                    <td>300 (42.86%)</td>
-                </tr>
-                <tr>
-                    <td>- Questions with visual-context</td>
-                    <td>400 (57.14%)</td>
-                </tr>
-                <tr>
-                    <td>Total unique countries</td>
-                    <td>54</td>
-                </tr>
-                <tr>
-                    <td>Total unique cities</td>
-                    <td>180</td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <hr>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Maximum textual-context length</td>
-                    <td>1500</td>
-                </tr>
-                <tr>
-                    <td>Maximum question length</td>
-                    <td>107</td>
-                </tr>
-                <tr>
-                    <td>Maximum questions from a country</td>
-                    <td>132</td>
-                </tr>
-                <tr>
-                    <td>Maximum questions from a city</td>
-                    <td>44</td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <hr>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Average textual-context length</td>
-                    <td>435.63</td>
-                </tr>
-                <tr>
-                    <td>Average question length</td>
-                    <td>21.41</td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <hr>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Unique number of textual-context</td>
-                    <td>215</td>
-                </tr>
-                <tr>
-                    <td>Unique number of visual-context</td>
-                    <td>270</td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <hr>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Min, Max, Avg Choices</td>
-                    <td>2, 7, 4.004</td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <hr>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Max zoom of visual-context</td>
-                    <td>21.0</td>
-                </tr>
-                <tr>
-                    <td>Min zoom of visual-context</td>
-                    <td>8.0</td>
-                </tr>
-                <tr>
-                    <td>Average zoom of visual-context</td>
-                    <td>15.26</td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <hr>
-                    </td>
-                </tr>
-            </tbody>
-        </table> -->
-        <div class="half-width">
-          <img src="images/key-stats.png" alt="Overview" style="width: 92%" />
-        </div>
-        <div class="half-width">
-          <img
-            src="images/sunburst_chart.svg"
-            alt="Overview"
-            style="
-              width: 100%;
-              height: 90%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            "
-          />
-          <!-- <div style="width: 100%; height: 90%; display: flex; justify-content: center;">
-                <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" style="" viewBox="200 25 300 400">
-                    <rect x="0" y="0" width="500" height="400" style="fill: rgb(255, 255, 255); fill-opacity: 1;" />
-                    <defs id="defs-1f45af">
-                        <g class="clips" />
-                        <g class="gradients" />
-                        <g class="patterns" />
-                    </defs>
-                    <g class="bglayer" />
-                    <g class="layer-below">
-                        <g class="imagelayer" />
-                        <g class="shapelayer" />
-                    </g>
-                    <g class="cartesianlayer" />
-                    <g class="polarlayer" />
-                    <g class="smithlayer" />
-                    <g class="ternarylayer" />
-                    <g class="geolayer" />
-                    <g class="funnelarealayer" />
-                    <g class="pielayer" />
-                    <g class="iciclelayer" />
-                    <g class="treemaplayer" />
-                    <g class="sunburstlayer">
-                        <g class="trace sunburst" stroke-linejoin="round" style="opacity: 1;">
-                            <g class="slice cursor-pointer">
-                                <path class="surface"
-                                    d="M350,240L440,240A90,90 0,1,0 268.91280188878227,279.0495365205802L350,240A0,0 0,1,1 350,240Z"
-                                    style="pointer-events: none; stroke-width: 1; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1;" />
-                                <g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" x="0" y="0"
-                                        style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;"
-                                        transform="translate(344.45767790733277,213.47052072142478)rotate(-12.85714285714289)">Visual</text>
-                                </g>
-                            </g>
-                            <g class="slice cursor-pointer">
-                                <path class="surface"
-                                    d="M350,240L268.91280188878227,279.0495365205802A90,90 0,0,0 440,240.00000000000003L350,240A0,0 0,0,1 350,240Z"
-                                    style="pointer-events: none; stroke-width: 1; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1;" />
-                                <g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" x="0" y="0"
-                                        style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;"
-                                        transform="translate(360.64056459101,288.928716387642)">Textual/API</text></g>
-                            </g>
-                            <g class="slice">
-                                <path class="surface"
-                                    d="M440,240L530,240A180,180 0,0,0 433.8701850240485,80.7335814930471L391.93509251202426,160.36679074652355A90,90 0,0,1 440,240Z"
-                                    style="pointer-events: none; stroke-width: 1; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1; opacity: 0.7;" />
-                                <g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" x="0" y="0"
-                                        style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;"
-                                        transform="translate(465.5786663569123,166.93449338814077)">
-                                        <tspan class="line" dy="0em" x="0" y="0">Place Info</tspan>
-                                        <tspan class="line" dy="1.3em" x="0" y="0">17.29%</tspan>
-                                    </text></g>
-                            </g>
-                            <g class="slice">
-                                <path class="surface"
-                                    d="M391.93509251202426,160.36679074652355L433.8701850240485,80.7335814930471A180,180 0,0,0 291.31286993857856,69.83590048087757L320.65643496928925,154.91795024043878A90,90 0,0,1 391.93509251202426,160.36679074652355Z"
-                                    style="pointer-events: none; stroke-width: 1; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1; opacity: 0.7;" />
-                                <g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" x="0" y="0"
-                                        style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;"
-                                        transform="translate(360.25088357784955,102.08804297225512)">
-                                        <tspan class="line" dy="0em" x="0" y="0">Nearby</tspan>
-                                        <tspan class="line" dy="1.3em" x="0" y="0">13.00%</tspan>
-                                    </text></g>
-                            </g>
-                            <g class="slice">
-                                <path class="surface"
-                                    d="M320.65643496928925,154.91795024043878L291.31286993857856,69.83590048087757A180,180 0,0,0 187.8256037775646,161.90092695883945L268.91280188878227,200.95046347941974A90,90 0,0,1 320.65643496928925,154.91795024043878Z"
-                                    style="pointer-events: none; stroke-width: 1; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1; opacity: 0.7;" />
-                                <g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" x="0" y="0"
-                                        style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;"
-                                        transform="translate(260.26932258528757,135.83201129139977)">
-                                        <tspan class="line" dy="0em" x="0" y="0">Counting</tspan>
-                                        <tspan class="line" dy="1.3em" x="0" y="0">12.57%</tspan>
-                                    </text></g>
-                            </g>
-                            <g class="slice">
-                                <path class="surface"
-                                    d="M268.91280188878227,200.95046347941974L187.8256037775646,161.90092695883945A180,180 0,0,0 176.4866850747464,287.8866322020014L263.2433425373732,263.94331610100073A90,90 0,0,1 268.91280188878227,200.95046347941974Z"
-                                    style="pointer-events: none; stroke-width: 1; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1; opacity: 0.7;" />
-                                <g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" x="0" y="0"
-                                        style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;"
-                                        transform="translate(215.50440781064273,224.59400579803642)">
-                                        <tspan class="line" dy="0em" x="0" y="0">Routing</tspan>
-                                        <tspan class="line" dy="1.3em" x="0" y="0">11.43%</tspan>
-                                    </text></g>
-                            </g>
-                            <g class="slice">
-                                <path class="surface"
-                                    d="M263.2433425373732,263.94331610100073L176.4866850747464,287.8866322020014A180,180 0,0,0 187.8256037775645,318.09907304116035L268.91280188878227,279.0495365205802A90,90 0,0,1 263.2433425373732,263.94331610100073Z"
-                                    style="pointer-events: none; stroke-width: 1; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1; opacity: 0.7;" />
-                                <g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" x="0" y="0"
-                                        style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;"
-                                        transform="translate(208.89587984564437,290.5482064364416)scale(0.682497779985749)rotate(-20.571428571428555)">
-                                        <tspan class="line" dy="0em" x="0" y="0">Unanswerable</tspan>
-                                        <tspan class="line" dy="1.3em" x="0" y="0">2.86%</tspan>
-                                    </text></g>
-                            </g>
-                            <g class="slice">
-                                <path class="surface"
-                                    d="M268.91280188878227,279.0495365205802L187.8256037775645,318.09907304116035A180,180 0,0,0 283.7375805167579,407.35976745988523L316.8687902583789,323.6798837299426A90,90 0,0,1 268.91280188878227,279.0495365205802Z"
-                                    style="pointer-events: none; stroke-width: 1; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1; opacity: 0.7;" />
-                                <g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" x="0" y="0"
-                                        style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;"
-                                        transform="translate(257.98967389684,335.51983714463495)">
-                                        <tspan class="line" dy="0em" x="0" y="0">Nearby</tspan>
-                                        <tspan class="line" dy="1.3em" x="0" y="0">11.86%</tspan>
-                                    </text></g>
-                            </g>
-                            <g class="slice">
-                                <path class="surface"
-                                    d="M316.8687902583789,323.6798837299426L283.7375805167579,407.35976745988523A180,180 0,0,0 390.05376811213654,415.48702419272826L370.0268840560683,327.74351209636416A90,90 0,0,1 316.8687902583789,323.6798837299426Z"
-                                    style="pointer-events: none; stroke-width: 1; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1; opacity: 0.7;" />
-                                <g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" x="0" y="0"
-                                        style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;"
-                                        transform="translate(339.3760790950667,375.1604587161636)">
-                                        <tspan class="line" dy="0em" x="0" y="0">Trip</tspan>
-                                        <tspan class="line" dy="1.3em" x="0" y="0">9.57%</tspan>
-                                    </text></g>
-                            </g>
-                            <g class="slice">
-                                <path class="surface"
-                                    d="M370.0268840560683,327.74351209636416L390.05376811213654,415.48702419272826A180,180 0,0,0 481.214352935854,363.218479067164L415.607176467927,301.609239533582A90,90 0,0,1 370.0268840560683,327.74351209636416Z"
-                                    style="pointer-events: none; stroke-width: 1; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1; opacity: 0.7;" />
-                                <g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" x="0" y="0"
-                                        style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;"
-                                        transform="translate(419.3037798781122,357.56672931494603)">
-                                        <tspan class="line" dy="0em" x="0" y="0">Routing</tspan>
-                                        <tspan class="line" dy="1.3em" x="0" y="0">9.43%</tspan>
-                                    </text></g>
-                            </g>
-                            <g class="slice">
-                                <path class="surface"
-                                    d="M415.607176467927,301.609239533582L481.214352935854,363.218479067164A180,180 0,0,0 527.1073259477533,272.1402410637546L438.55366297387667,256.0701205318773A90,90 0,0,1 415.607176467927,301.609239533582Z"
-                                    style="pointer-events: none; stroke-width: 1; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1; opacity: 0.7;" />
-                                <g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" x="0" y="0"
-                                        style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;"
-                                        transform="translate(475.26030587053657,299.812122429542)">
-                                        <tspan class="line" dy="0em" x="0" y="0">Place Info</tspan>
-                                        <tspan class="line" dy="1.3em" x="0" y="0">9.14%</tspan>
-                                    </text></g>
-                            </g>
-                            <g class="slice">
-                                <path class="surface"
-                                    d="M438.55366297387667,256.0701205318773L527.1073259477533,272.1402410637546A180,180 0,0,0 530,240.00000000000006L440,240.00000000000003A90,90 0,0,1 438.55366297387667,256.0701205318773Z"
-                                    style="pointer-events: none; stroke-width: 1; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1; opacity: 0.7;" />
-                                <g class="slicetext"><text data-notex="1" class="slicetext" text-anchor="middle" x="0" y="0"
-                                        style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;"
-                                        transform="translate(499.46681670936806,251.187698657191)scale(0.682497779985749)rotate(5.142857142857167)">
-                                        <tspan class="line" dy="0em" x="0" y="0">Unanswerable</tspan>
-                                        <tspan class="line" dy="1.3em" x="0" y="0">2.86%</tspan>
-                                    </text></g>
-                            </g>
-                        </g>
-                    </g>
-                    <g class="glimages" />
-                    <defs id="topdefs-1f45af">
-                        <g class="clips" />
-                    </defs>
-                    <g class="layer-above">
-                        <g class="imagelayer" />
-                        <g class="shapelayer" />
-                    </g>
-                    <g class="infolayer">
-                        <g class="g-gtitle" />
-                    </g>
-                </svg>
-                </div> -->
-          <p style="text-align: center">
-            Distribution of tasks in <b>DeEscalWild</b>
-          </p>
-        </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-bottom: 2rem;">
+    <div style="flex: 1 1 200px; max-width: 250px; background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <i class="fas fa-file-video" style="font-size: 2rem; color: #4facfe; margin-bottom: 1rem;"></i>
+        <h3 style="margin: 0; font-size: 2rem; color: #333;">1,500</h3>
+        <p style="margin: 0.5rem 0 0; color: #666; font-size: 0.95rem; font-weight: 500;">Total Files (Scenarios)</p>
+    </div>
 
-        <!-- <div>                        
-                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-                <script src="plot.js">
-                </script>                
-                <div id="831fada6-f182-4dbd-8933-69c694372809" class="plotly-graph-div" style="height:100%; width:100%;"></div>            
-                <script src="b.js">                                   
-                </script>           
-                </div> -->
+    <div style="flex: 1 1 200px; max-width: 250px; background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <i class="fas fa-comments" style="font-size: 2rem; color: #00f2fe; margin-bottom: 1rem;"></i>
+        <h3 style="margin: 0; font-size: 2rem; color: #333;">285,887</h3>
+        <p style="margin: 0.5rem 0 0; color: #666; font-size: 0.95rem; font-weight: 500;">Dialogue Turns</p>
+    </div>
+
+    <div style="flex: 1 1 200px; max-width: 250px; background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <i class="fas fa-keyboard" style="font-size: 2rem; color: #43e97b; margin-bottom: 1rem;"></i>
+        <h3 style="margin: 0; font-size: 2rem; color: #333;">3.6M+</h3>
+        <p style="margin: 0.5rem 0 0; color: #666; font-size: 0.95rem; font-weight: 500;">Total Word Count</p>
+    </div>
+
+    <div style="flex: 1 1 200px; max-width: 250px; background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <i class="fas fa-layer-group" style="font-size: 2rem; color: #38f9d7; margin-bottom: 1rem;"></i>
+        <h3 style="margin: 0; font-size: 2rem; color: #333;">4.7M+</h3>
+        <p style="margin: 0.5rem 0 0; color: #666; font-size: 0.95rem; font-weight: 500;">Token Count (Est.)</p>
+    </div>
+    </div>
+
+      <h2 style="text-align: center; margin-top: 3rem" id="results">Results</h2>
+
+      <style>
+        .table-responsive {
+          width: 100%;
+          overflow-x: auto;
+          margin-bottom: 2rem;
+        }
+        .academic-table {
+          width: 100%;
+          border-collapse: collapse;
+          font-family: 'Roboto', sans-serif;
+          font-size: 0.95rem;
+          margin: 1rem auto;
+          text-align: center;
+        }
+        .academic-table th, .academic-table td {
+          padding: 10px 12px;
+        }
+        .academic-table thead th {
+          border-top: 2px solid #333;
+          border-bottom: 1px solid #333;
+          font-weight: 600;
+          vertical-align: bottom;
+        }
+        .academic-table thead tr:first-child th {
+          border-bottom: none;
+        }
+        .academic-table thead tr:nth-child(2) th {
+          border-top: 1px solid #ccc;
+          font-weight: 500;
+          font-size: 0.85rem;
+          color: #555;
+        }
+        .academic-table tbody tr:last-child td {
+          border-bottom: 2px solid #333;
+        }
+        .academic-table tbody tr {
+          border-bottom: 1px solid #eee;
+        }
+        .academic-table tbody td:first-child, .academic-table thead th:first-child {
+          text-align: left;
+        }
+        .delta {
+          color: #2e7d32; /* Dark green for improvements */
+          font-size: 0.85em;
+          margin-left: 4px;
+        }
+      </style>
+
+      <div class="table-responsive">
+        <table class="academic-table">
+          <thead>
+            <tr>
+              <th rowspan="2" style="border-bottom: 1px solid #333;">Model</th>
+              <th colspan="2">ROUGE-L</th>
+              <th colspan="2">BLEU-4</th>
+              <th colspan="2">METEOR</th>
+              <th colspan="2">BERTScore (F1)</th>
+            </tr>
+            <tr>
+              <th>Base</th>
+              <th>FT (∆)</th>
+              <th>Base</th>
+              <th>FT (∆)</th>
+              <th>Base</th>
+              <th>FT (∆)</th>
+              <th>Base</th>
+              <th>FT (∆)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Qwen 2.5 (3B-Instruct)</td>
+              <td>11.2</td>
+              <td><strong>15.8</strong> <span class="delta">↑4.5</span></td>
+              <td>0.9</td>
+              <td><strong>3.8</strong> <span class="delta">↑3.0</span></td>
+              <td>15.7</td>
+              <td><strong>19.5</strong> <span class="delta">↑3.9</span></td>
+              <td>0.86</td>
+              <td><strong>0.88</strong> <span class="delta">↑0.01</span></td>
+            </tr>
+            <tr>
+              <td>Llama 3.2 (3B-Instruct)</td>
+              <td>11.3</td>
+              <td>14.8 <span class="delta">↑3.5</span></td>
+              <td>0.6</td>
+              <td>2.3 <span class="delta">↑1.7</span></td>
+              <td>15.7</td>
+              <td>17.8 <span class="delta">↑2.2</span></td>
+              <td>0.86</td>
+              <td>0.87 <span class="delta">↑0.01</span></td>
+            </tr>
+            <tr>
+              <td>Gemma 2 (2B-Instruct)</td>
+              <td>7.2</td>
+              <td>14.8 <span class="delta">↑7.6</span></td>
+              <td>0.4</td>
+              <td>1.9 <span class="delta">↑1.5</span></td>
+              <td>11.7</td>
+              <td>16.2 <span class="delta">↑4.5</span></td>
+              <td>0.81</td>
+              <td>0.87 <span class="delta">↑0.06</span></td>
+            </tr>
+            <tr>
+              <td>Granite 3.0 (2B-Instruct)</td>
+              <td>10.2</td>
+              <td>15.5 <span class="delta">↑5.3</span></td>
+              <td>1.2</td>
+              <td>2.2 <span class="delta">↑1.0</span></td>
+              <td>13.5</td>
+              <td>16.8 <span class="delta">↑3.3</span></td>
+              <td>0.83</td>
+              <td>0.87 <span class="delta">↑0.04</span></td>
+            </tr>
+            <tr>
+              <td>Falcon 3 (3B-Instruct)</td>
+              <td>9.2</td>
+              <td>11.3 <span class="delta">↑2.1</span></td>
+              <td>0.5</td>
+              <td>1.2 <span class="delta">↑0.7</span></td>
+              <td>12.4</td>
+              <td>15.5 <span class="delta">↑3.1</span></td>
+              <td>0.83</td>
+              <td>0.85 <span class="delta">↑0.02</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="text-align: justify; font-size: 0.9rem; color: #555; margin-top: 0.5rem;">
+          <strong>Table 3. Performance Comparison.</strong> Comparison of base and fine-tuned models. The subscript indicates the increase (↑) from the base model. Best results are in <strong>bold</strong>. Metrics are scaled by 100, except BERTScore (0-1).
+        </p>
       </div>
 
-      <h2 style="text-align: center; margin-top: 2rem" id="results">Results</h2>
-      <img
-        src="images/DeEscalWild-textual.png"
-        alt="Overview"
-        style="width: 100%"
-      />
-      <p style="text-align: center">Table 1: DeEscalWild-Textual performances</p>
-      <img
-        src="images/DeEscalWild-api.png"
-        alt="Overview"
-        style="width: 100%; margin-top: 2rem"
-      />
-      <p style="text-align: center">Table 2: DeEscalWild-API performances</p>
-      <img
-        src="images/DeEscalWild-visual.png"
-        alt="Overview"
-        style="width: 100%; margin-top: 2rem"
-      />
-      <p style="text-align: center">Table 3: DeEscalWild-Visual performances</p>
-      <!-- <p>
-            In simple program synthesis tasks like HumanEval and MBPP we got highest scale of performance (Pass@1) scores. The current state-of-the-art method, Reflexion perform reasonably well, this approach does not generalize across varying datasets depicting a wide variety of problems. Self-reflection techniques enhance GPT-4's performance on HumanEval but result in a 3% decrease on the MBPP dataset. Consequently, even in HumanEval, with GPT-4, our Pass@1 surpasses Reflexion by ~3%. The significance of MapCoder shines through clearly when evaluated in competitive problem-solving contexts. Across datasets such as APPS, xCodeEval, and CodeContests, MapCoder demonstrates substantial enhancements over Direct prompting methods, with improvements of 41.3%, 52.6%, and 132.8% for ChatGPT, and 73.7%, 41.2%, and 135.1% for GPT4, respectively. Notably, the most challenging datasets are APPS and CodeContest, where MapCoder's performance stands out prominently. Importantly, on CodeContest our Pass@1 results match the Pass@5 scores of the concurrent state-of-the-art model AlphaCodium: 28.5% vs. their 29%. Furthermore, our Pass@5 in CodeContest is 35.2% results demonstrate an additional improvement of 12.8% over AlphaCodium.
-        </p>  -->
+      <div class="table-responsive" style="margin-top: 3rem;">
+        <table class="academic-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>ROUGE-L</th>
+              <th>BLEU-4</th>
+              <th>METEOR</th>
+              <th>BERTScore (F1)</th>
+              <th>Avg. Inference Latency (sec)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Qwen 2.5 (3B-Instruct) FT</td>
+              <td><strong>15.8</strong></td>
+              <td><strong>3.8</strong></td>
+              <td><strong>19.5</strong></td>
+              <td><strong>0.88</strong></td>
+              <td>0.38</td>
+            </tr>
+            <tr>
+              <td>Llama 3.2 (3B-Instruct) FT</td>
+              <td>14.8</td>
+              <td>2.3</td>
+              <td>17.8</td>
+              <td>0.87</td>
+              <td>0.44</td>
+            </tr>
+            <tr>
+              <td>Gemma 2 (2B-Instruct) FT</td>
+              <td>14.8</td>
+              <td>1.9</td>
+              <td>16.2</td>
+              <td>0.87</td>
+              <td>0.33</td>
+            </tr>
+            <tr>
+              <td>Granite 3.0 (2B-Instruct) FT</td>
+              <td>15.5</td>
+              <td>2.2</td>
+              <td>16.8</td>
+              <td>0.87</td>
+              <td><strong>0.30</strong></td>
+            </tr>
+            <tr>
+              <td>Falcon 3 (3B-Instruct) FT</td>
+              <td>11.3</td>
+              <td>1.2</td>
+              <td>15.5</td>
+              <td>0.85</td>
+              <td>0.41</td>
+            </tr>
+            <tr style="background-color: #f9f9f9;">
+              <td><em>Gemini 2.5 Flash (Baseline)</em></td>
+              <td><em>12.4</em></td>
+              <td><em>1.1</em></td>
+              <td><em>13.2</em></td>
+              <td><em>0.85</em></td>
+              <td><em>3.50</em></td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="text-align: justify; font-size: 0.9rem; color: #555; margin-top: 0.5rem;">
+          <strong>Table 4. Final Performance and Latency Comparison.</strong> Comparison of fine-tuned small models against the prompt-engineered Gemini 2.5 Flash baseline. The fine-tuned Qwen 2.5 (3B) model outperforms the large-scale baseline across all four quality metrics. While Qwen offers significantly faster inference than the baseline, Granite 3.0 achieves the lowest overall average inference latency of 0.30s.
+        </p>
+      </div>
+      
 
-        <h2 style="text-align: center;" >Cite Us</h2>
-            <pre
-                style="white-space: pre; word-wrap: normal; padding: 1.25em 1.5em; overflow-x: auto; background-color: #eee; color: #4a4a4a; font-size: .875em; border-radius: 3px; margin: 0 3px;">
+      <h2 style="text-align: center; margin-top: 3rem;">Cite Us</h2>
+      <pre style="white-space: pre; word-wrap: normal; padding: 1.25em 1.5em; overflow-x: auto; background-color: #f6f8fa; color: #24292e; font-size: .875em; border-radius: 6px; border: 1px solid #e1e4e8; margin: 0 3px;">
 <code>@unpublished{
   hasan2026DeEscalWild,
   title  = {DeEscalWild: A Real-World Benchmark for Automated De-Escalation Training with {SLMs}},
@@ -803,16 +425,5 @@ We bridge this gap by introducing DeEscalWild—the first large-scale dataset de
   note   = {Submitted to the 43rd International Conference on Machine Learning (ICML)},
   year   = {2026}
 }</code></pre>
-<!-- <pre style="white-space: pre-wrap; word-wrap: break-word;">
-@article{dihan2024DeEscalWild,
-  title={DeEscalWild: A Real-World Benchmark for Automated De-Escalation Training
-with SLMs},
-  author={Dihan, Mahir Labib and Hassan, Md Tanvir and Parvez, Md Tanvir and Hasan, Md Hasebul and Alam, Md Almash and Cheema, Muhammad Aamir and Ali, Mohammed Eunus and Parvez, Md Rizwan},
-  journal={arXiv preprint arXiv:2501.00316},
-  year={2024}
-}
-</pre> -->
-
-    </div>
   </body>
 </html>

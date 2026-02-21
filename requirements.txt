@@ -1,1 +1,7 @@
 unsloth
+yt-dlp
+google-genai
+pandas
+numpy
+Jinja2
+tqdm
