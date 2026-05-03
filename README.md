@@ -8,9 +8,9 @@
 
 This repository contains the official implementation for the entire data pipeline:
 1.  **Acquisition:** Mining raw interaction videos from YouTube, TikTok, and Facebook.
-2.  **Hybrid Filtering:** Using "LLM-as-a-Judge" to identify high-intensity conflict scenarios[cite: 279].
-3.  **Diarization:** converting raw audio into structured multi-speaker scripts using Gemini 2.5 Flash[cite: 362].
-4.  **Training:** Fine-tuning SLMs (Qwen 2.5, Llama 3.2) via QLORA[cite: 468].
+2.  **Hybrid Filtering:** Using "LLM-as-a-Judge" to identify high-intensity conflict scenarios.
+3.  **Diarization:** converting raw audio into structured multi-speaker scripts using Gemini 2.5 Flash.
+4.  **Training:** Fine-tuning SLMs (Qwen 2.5, Llama 3.2) via QLORA.
 
 ---
 
