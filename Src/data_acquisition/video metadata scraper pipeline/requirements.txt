@@ -1,0 +1,4 @@
+pandas>=2.0
+yt-dlp>=2024.1.1
+youtube-transcript-api>=0.6.2
+tqdm>=4.66

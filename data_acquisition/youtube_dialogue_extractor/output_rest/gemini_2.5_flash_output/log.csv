@@ -1,9 +1,0 @@
-id,input_token,output_token,thought_token,execution_time_sec,model_name
-189,0,0,0,0,gemini_2.5_flash
-198,0,0,0,0,gemini_2.5_flash
-199,75838,13146,0,93.33,gemini_2.5_flash
-201,46890,65525,0,251.09,gemini_2.5_flash
-202,78164,61941,0,394.56,gemini_2.5_flash
-207,29991,65526,0,236.87,gemini_2.5_flash
-212,46764,65526,0,258.04,gemini_2.5_flash
-213,55960,43928,0,175.78,gemini_2.5_flash

@@ -4,3 +4,19 @@
 
 # Ada Library Information
 *.ali
+# Archive files
+./archive/
+# data file
+./processed_data/
+# data pipeline
+./data_acquisition/
+./data_processing/
+./data_visualization/
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+# Python bytecode
+__pycache__/
+*.pyc
+
+
+

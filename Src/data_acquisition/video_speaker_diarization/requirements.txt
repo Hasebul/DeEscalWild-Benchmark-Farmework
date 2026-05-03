@@ -1,0 +1,10 @@
+pandas>=2.0
+yt-dlp>=2024.1.1
+youtube-transcript-api>=0.6.2
+tqdm>=4.66
+pyannote.audio>=2.1.1
+pydantic>=2.10.2
+google-api-python-client>=2.70.0
+google-auth>=2.20.0
+google-auth-httplib2>=0.1.0
+genai>=0.1.0
