@@ -21,7 +21,7 @@ This repository contains the official implementation for the entire data pipelin
   - [Step 1: Social Media Mining](#step-1-social-media-mining)
   - [Step 2: Transcription & Hybrid Filtering](#step-2-transcription--hybrid-filtering)
   - [Step 3: Diarization with Gemini](#step-3-diarization-with-gemini)
-- [SLM Training & Evaluation](#slm-training--evaluation)
+- [Model Generation, Training, and Evaluation](## 🤖 Model Generation, Training, and Evaluation)
 - [Results](#results)
 - [Ethical Use](#ethical-use)
 - [Citation](#citation)
