@@ -60,75 +60,185 @@ This repository contains the official implementation for the entire data pipelin
 
 ```text
 DeEscalWild/
-├── data/
-│   ├── raw_metadata/       # Output from Step 1
-│   ├── transcripts/        # Output from Step 2 (Whisper)
-│   └── final_benchmark/    # Output from Step 3 (Final JSONs)
-├── pipelines/
-│   ├── acquisition/        # Scrapers for YT, TikTok, FB
-│   ├── filtering/          # LLM-as-a-Judge logic
-│   └── diarization/        # Gemini 2.5 Flash integration
-├── training/
-│   ├── finetune.py         # QLORA training script
-│   └── evaluate.py         # ROUGE/BERTScore testing
+├── src/
+│   ├── data_acquisition/
+│   │   ├── relevant_data_filtering/
+│   │   ├── video_metadata_scraper_pipeline/
+│   │   └── video_speaker_diarization/
+│   │
+│   ├── evaluation/
+│   │   ├── evaluate_llm_as_judge.py
+│   │   ├── metric_based_eval_all_models.py
+│   │   ├── requirements.txt
+│   │   └── README.md
+│   │
+│   ├── fine_tuning/
+│   │   └── README.md
+│   │
+│   └── generate_model_response/
+│       ├── generate_all_model_conversations.py
+│       ├── scenarios.json
+│       ├── responses/
+│       └── README.md
+│
+├── .gitignore
+├── Deescal_wild.jpg
+├── index.html
+├── LICENSE
 ├── requirements.txt
 └── README.md
 ```
 
 ## 🚀 Data Pipeline
 
-### Step 1: Social Media Mining
-We collect raw video metadata from identified channels on YouTube (15 channels), TikTok (5 channels), and Facebook (3 pages).
+Each major folder contains its own `README.md` file with detailed instructions for that step.  
+Follow the folder-level README files when running the full pipeline.
 
-> **Note:** The scraper implements a rotating proxy network to bypass platform rate-limiting, which typically blocks requests after ~50 items.
+### Step 1: Social Media Mining
+
+Raw video metadata is collected from identified public sources, including YouTube channels, TikTok accounts, and Facebook pages.
+
+This step is handled inside:
+
+```text
+src/data_acquisition/video_metadata_scraper_pipeline/
+```
+
+> **Note:** The scraper should follow each platform’s terms of service, API limits, and robots policies. Use rate limiting, retry logic, and exponential backoff to avoid excessive requests.
 
 ```bash
-# Run the multi-platform scraper
-python pipelines/acquisition/scrape_sources.py \
+python src/data_acquisition/video_metadata_scraper_pipeline/scrape_sources.py \
     --platforms youtube tiktok facebook \
     --output_dir ./data/raw_metadata \
-    --max_videos 5000 \
-    --use_proxies True
+    --max_videos 5000
 ```
 
-### Step 2: Transcription & Hybrid Filtering
-Raw videos are processed to ensure they contain relevant law enforcement interactions using a taxonomy of 30 binary features (e.g., police presence, escalation signals).
+For more details, see:
 
-1. **Transcribe** raw audio using OpenAI Whisper (Large-v3).
-2. **Filter** using an LLM to enforce the logic:
-   $$C_{valid} = (Police \ge 2) \land (Escalation \ge 3 \lor DeEscalation \ge 3)$$
+```text
+src/data_acquisition/video_metadata_scraper_pipeline/README.md
+```
+
+---
+
+### Step 2: Transcription and Relevant Data Filtering
+
+Raw videos are processed to identify law-enforcement-related interactions.  
+The filtering process uses transcripts and a taxonomy of binary features, such as police presence, escalation signals, and de-escalation signals.
+
+This step is handled inside:
+
+```text
+src/data_acquisition/relevant_data_filtering/
+```
+
+The filtering logic follows:
+
+```math
+C_{valid} = (Police \ge 2) \land (Escalation \ge 3 \lor DeEscalation \ge 3)
+```
+
+Pipeline steps:
+
+1. Transcribe raw audio using Whisper.
+2. Extract relevant interaction features.
+3. Filter videos using the feature-based selection rule.
+4. Save filtered examples for diarization and benchmark construction.
 
 ```bash
-python pipelines/filtering/filter_pipeline.py \
+python src/data_acquisition/relevant_data_filtering/filter_pipeline.py \
     --input_dir ./data/raw_metadata \
+    --output_dir ./data/filtered_audio \
     --whisper_model large-v3 \
     --threshold_police 2 \
-    --threshold_escalation 3
+    --threshold_escalation 3 \
+    --threshold_deescalation 3
 ```
-### Step 3: Diarization with Gemini
-We utilize **Gemini 2.5 Flash** for high-fidelity speaker diarization. This model processes audio directly to handle multi-party confusion and "cross-talk" better than traditional pyannote pipelines.
 
-* **Input:** Filtered Audio
-* **Output:** JSON scripts with speaker roles (Officer, Subject, Bystander) and context tags.
+For more details, see:
+
+```text
+src/data_acquisition/relevant_data_filtering/README.md
+```
+
+---
+
+### Step 3: Speaker Diarization
+
+Filtered audio is processed to identify speaker roles such as Officer, Subject, Bystander, or Dispatcher.  
+The diarization pipeline produces structured JSON transcripts with speaker labels, timestamps, and context tags.
+
+This step is handled inside:
+
+```text
+src/data_acquisition/video_speaker_diarization/
+```
 
 ```bash
-python pipelines/diarization/generate_scripts.py \
-    --model "gemini-2.5-flash" \
-    --api_key "YOUR_GOOGLE_API_KEY" \
+python src/data_acquisition/video_speaker_diarization/generate_scripts.py \
+    --model gemini-2.5-flash \
     --input_dir ./data/filtered_audio \
     --output_dir ./data/final_benchmark
 ```
 
-## 🤖 SLM Training & Evaluation
-
-We fine-tune Small Language Models (SLMs) using 4-bit Quantized Low-Rank Adaptation (QLORA) to run efficiently on edge hardware.
-
-### Fine-Tuning
-The default configuration uses **Qwen 2.5 (3B-Instruct)** with Rank $r=16$ and Alpha $\alpha=32$.
+Set your Gemini API key before running:
 
 ```bash
-python training/finetune.py \
-    --model_name "Qwen/Qwen2.5-3B-Instruct" \
+export GEMINI_API_KEY="YOUR_GOOGLE_API_KEY"
+```
+
+For Google Colab:
+
+```python
+import os
+os.environ["GEMINI_API_KEY"] = "YOUR_GOOGLE_API_KEY"
+```
+
+For more details, see:
+
+```text
+src/data_acquisition/video_speaker_diarization/README.md
+```
+
+---
+
+## 🤖 Model Generation, Training, and Evaluation
+
+The project evaluates base and fine-tuned small language models on police de-escalation dialogue generation.
+
+The supported model families include:
+
+- Qwen
+- Llama
+- Phi
+- Mistral
+- Granite
+- Gemma
+- Falcon
+- Gemini 2.5 Flash
+
+---
+
+### Step 4: Fine-Tuning
+
+Small Language Models are fine-tuned using QLoRA for efficient training.
+
+This step is handled inside:
+
+```text
+src/fine_tuning/
+```
+
+Example configuration:
+
+- Base model: Qwen 2.5 3B Instruct
+- LoRA rank: `r = 16`
+- LoRA alpha: `alpha = 32`
+- Quantization: 4-bit
+
+```bash
+python src/fine_tuning/finetune.py \
+    --model_name Qwen/Qwen2.5-3B-Instruct \
     --data_path ./data/final_benchmark/train.json \
     --output_dir ./checkpoints/qwen_deescalwild \
     --lora_r 16 \
@@ -137,13 +247,164 @@ python training/finetune.py \
     --epochs 3
 ```
 
-### Evaluation
-Evaluate the model against the held-out test set (5% of scenarios) using ROUGE-L, BLEU-4, METEOR, and BERTScore.
+For more details, see:
+
+```text
+src/fine_tuning/README.md
+```
+
+---
+
+### Step 5: Generate Model Responses
+
+After fine-tuning, generate full model responses for each benchmark scenario.
+
+This step is handled inside:
+
+```text
+src/generate_model_response/
+```
+
+The generation script loads:
+
+- Scenario context
+- Character profile
+- Police dialogue turns
+
+It then generates the civilian/suspect side of the conversation for each model.
+
 ```bash
-    python training/evaluate.py \
-    --base_model "Qwen/Qwen2.5-3B-Instruct" \
-    --adapter_path ./checkpoints/qwen_deescalwild \
-    --test_data ./data/final_benchmark/test.json
+python src/generate_model_response/generate_all_model_conversations.py \
+    --input_json ./src/generate_model_response/scenarios.json \
+    --output_dir ./src/generate_model_response/responses \
+    --load_in_4bit
+```
+
+To test only Qwen models first:
+
+```bash
+python src/generate_model_response/generate_all_model_conversations.py \
+    --input_json ./src/generate_model_response/scenarios.json \
+    --output_dir ./src/generate_model_response/responses \
+    --load_in_4bit \
+    --only_models qwen_base qwen_finetuned
+```
+
+For more details, see:
+
+```text
+src/generate_model_response/README.md
+```
+
+---
+
+### Step 6: Metric-Based Evaluation
+
+Generated model responses are compared against reference responses using automatic text-generation metrics.
+
+This step is handled inside:
+
+```text
+src/evaluation/
+```
+
+Metrics include:
+
+- ROUGE-L
+- BLEU-4
+- METEOR
+- BERTScore F1
+
+```bash
+python src/evaluation/metric_based_eval_all_models.py \
+    --input_folder ./data/final_benchmark/test_data_csvs \
+    --output_folder ./results/metric_results \
+    --load_in_4bit
+```
+
+To evaluate only Qwen models:
+
+```bash
+python src/evaluation/metric_based_eval_all_models.py \
+    --input_folder ./data/final_benchmark/test_data_csvs \
+    --output_folder ./results/metric_results \
+    --load_in_4bit \
+    --only_models qwen_base qwen_finetuned
+```
+
+For more details, see:
+
+```text
+src/evaluation/README.md
+```
+
+---
+
+### Step 7: LLM-as-Judge Evaluation
+
+The LLM-as-judge evaluation measures two higher-level qualities:
+
+1. Realism of the generated civilian/suspect response.
+2. De-escalation effectiveness of the full interaction.
+
+This step is handled inside:
+
+```text
+src/evaluation/
+```
+
+```bash
+python src/evaluation/evaluate_llm_as_judge.py \
+    --input ./data/final_benchmark/evaluation_cases.json \
+    --output_dir ./results/judge_results \
+    --judge_model gemini-2.5-flash
+```
+
+Set your Gemini API key before running:
+
+```bash
+export GEMINI_API_KEY="YOUR_GOOGLE_API_KEY"
+```
+
+For more details, see:
+
+```text
+src/evaluation/README.md
+```
+
+---
+
+## Recommended Full Workflow
+
+Follow the README file in each folder for detailed instructions.
+
+```text
+1. src/data_acquisition/video_metadata_scraper_pipeline/README.md
+2. src/data_acquisition/relevant_data_filtering/README.md
+3. src/data_acquisition/video_speaker_diarization/README.md
+4. src/fine_tuning/README.md
+5. src/generate_model_response/README.md
+6. src/evaluation/README.md
+```
+
+Recommended order:
+
+```text
+Metadata Scraping
+        ↓
+Transcription and Filtering
+        ↓
+Speaker Diarization
+        ↓
+Benchmark Construction
+        ↓
+Fine-Tuning
+        ↓
+Model Response Generation
+        ↓
+Metric-Based Evaluation
+        ↓
+LLM-as-Judge Evaluation
 ```
 
 ### 📊 Results
