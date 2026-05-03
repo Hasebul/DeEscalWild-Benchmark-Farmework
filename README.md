@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Paper Status](https://img.shields.io/badge/Status-Under%20Review-red)](https://icml.cc/)
+[![Paper](https://img.shields.io/badge/Paper-Link-blue)](https://arxiv.org/abs/2604.13075)
+[![Dataset](https://img.shields.io/badge/Dataset-Link-green)](https://doi.org/10.7910/DVN/CWMCZI)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 
 **DeEscalWild** is the first large-scale benchmark dataset derived from "in-the-wild" police-civilian interactions. It contains **1,500 high-fidelity scenarios** and **285,887 dialogue turns** designed to train Small Language Models (SLMs) for low-latency, privacy-preserving de-escalation training on edge devices (e.g., VR headsets).
